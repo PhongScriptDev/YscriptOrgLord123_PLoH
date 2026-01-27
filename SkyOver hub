@@ -116,13 +116,23 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "Fe Server Admin",
    Callback = function()
-             
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
    end,
 })
 
+local Button = MainTab:CreateButton({
+   Name = "Fe Scp 096",
+   Callback = function()
+             loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-SCP-096-36948"))()
+   end,
+})
 
-
-
+local Button = MainTab:CreateButton({
+   Name = "Fe Jerk Off",
+   Callback = function()
+             loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-jerk-off-goon-28106"))()
+   end,
+})
 
 
 
