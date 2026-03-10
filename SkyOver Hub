@@ -138,3 +138,17 @@ local Button = MainTab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/PhongScriptDev/SkyOver-Hub/refs/heads/main/Anti%20Afk%20Untimate'))()
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "GodMode",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Rawbr10/Roblox-Scripts/refs/heads/main/God%20Mode%20Script%20Universal"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Player Index",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PhongScriptDev/SkyOver-Hub/refs/heads/main/Player%20Index"))()
+   end,
+})
