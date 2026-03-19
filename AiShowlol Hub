@@ -10,8 +10,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local MainWindow = Rayfield:CreateWindow({
    Name = "AiShowlol Hub",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Script loading",
-   LoadingSubtitle = "By SkylistXPhong",
+   LoadingTitle = "AiShowlol",
+   LoadingSubtitle = "By Ahiray",
    ShowText = "Rayfield ", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -292,7 +292,7 @@ local function KillTarget(target, dist)
             ["cycleIndex"] = 1,
             ["hitboxOffset"] = Vector3.new(0, 0, 0),
             ["tool"] = tool,
-            ["damage"] = 999999999
+            ["damage"] = 999999999999999999999999999999999999999
         },
         [3] = {
             [1] = {
@@ -382,17 +382,17 @@ task.spawn(function()
                             end
                         end
                     else
-                        if enemy.Character:FindFirstChild("TzuanHL") then enemy.Character.TzuanHL:Destroy() end
-                        if eRoot and eRoot:FindFirstChild("TzuanTracker") then eRoot.TzuanTracker:Destroy() end
+                        if enemy.Character:FindFirstChild("AhiHL") then enemy.Character.TzuanHL:Destroy() end
+                        if eRoot and eRoot:FindFirstChild("Ahiray") then eRoot.TzuanTracker:Destroy() end
                     end
                 end
             end
         else
             for _, enemy in pairs(Players:GetPlayers()) do
                 if enemy.Character then
-                    if enemy.Character:FindFirstChild("TzuanHL") then enemy.Character.TzuanHL:Destroy() end
+                    if enemy.Character:FindFirstChild("AhiHL") then enemy.Character.TzuanHL:Destroy() end
                     local eRoot = enemy.Character:FindFirstChild("HumanoidRootPart")
-                    if eRoot and eRoot:FindFirstChild("TzuanTracker") then eRoot.TzuanTracker:Destroy() end
+                    if eRoot and eRoot:FindFirstChild("Ahiray") then eRoot.TzuanTracker:Destroy() end
                 end
             end
         end
