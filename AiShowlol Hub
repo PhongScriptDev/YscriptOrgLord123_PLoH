@@ -97,7 +97,7 @@ local soundVolume = 100
 -- ID âm thanh
 local soundId = "rbxassetid://1839246711"
 
-Tab:CreateButton({
+MainTab:CreateButton({
     Name = "Phát Âm Thanh",
     Callback = function()
         local sound = Instance.new("Sound")
