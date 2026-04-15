@@ -92,17 +92,12 @@ local MainWindow = Rayfield:CreateWindow({
 local MainTab = MainWindow:CreateTab("Main & Info", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Main & Info")
 
-local soundVolume = 100
-
--- ID âm thanh
-local soundId = "rbxassetid://1839246711"
-
 MainTab:CreateButton({
     Name = "Phát Âm Thanh",
     Callback = function()
         local sound = Instance.new("Sound")
-        sound.SoundId = soundId
-        sound.Volume = soundVolume
+        sound.SoundId = "rbxassetid://1839246711"
+        sound.Volume = 100
         sound.Parent = game:GetService("SoundService")
 
         sound:Play()
